@@ -5,19 +5,19 @@ body {
 }
 .square {
     position:fixed;
-    top:0px;
+    top: 0px;
     left: 0px;
     width:100%;
-    height:100%;
+    height:20%;
+    background-color: rgb(255, 150, 170);
+    z-index: -1;
     
 }
 a:default, a:visited {
     color: white;
     background-color: rgb(255, 150, 170);
+    padding: 50px, 50px;
 }
 a:hover, a:active {
     background-color: rgb(255, 110, 135);
-}
-#move {
-    transform: translate(0px, -100px)
 }
