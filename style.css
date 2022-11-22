@@ -1,23 +1,50 @@
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color:rgb(215, 235, 255);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+  color: white;
+}
+.chapters {
+  position: fixed;
+  right: -30px;
+  top: -20px;
+  float: right;
+  height: 110vh;
+  width: 40vh;
+  margin-left: 10px;
+  background-color:rgb(35, 35, 35);
+  
+}
+.sideButtons {
+  background-color:rgb(35, 35, 35);
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  width: 35vh;
+  cursor: pointer;
+  transform: translate(0px, 15px);
+  display: block;
+}
 
+.showButton {
+  position: fixed;
+  margin-top: -100px;
+  margin-left: 70vh;
+  padding: 8px 7.5px;
+  border: none;
+  background-color:rgb(35, 35, 35);
+  color: white;
+  border-radius: 5px;
 }
-.square {
-    position:fixed;
-    top: 0px;
-    left: 0px;
-    width:100%;
-    height:20%;
-    background-color: rgb(255, 150, 170);
-    z-index: -1;
-    
+
+.btn-group, .button:hover {
+  background-color: rgb(65, 65, 65);
 }
-a:default, a:visited {
-    color: white;
-    background-color: rgb(255, 150, 170);
-    padding: 50px, 50px;
-}
-a:hover, a:active {
-    background-color: rgb(255, 110, 135);
-}
+  
+
+
+
+
+
