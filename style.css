@@ -1,48 +1,59 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: black;
-  color: white;
+  font-family: "Lato", sans-serif;
 }
-.chapters {
+
+.sidenav {
+  height: 100%;
+  width: 0;
   position: fixed;
-  right: -30px;
-  top: -20px;
-  float: right;
-  height: 110vh;
-  width: 40vh;
-  margin-left: 10px;
-  background-color:rgb(35, 35, 35);
-  
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
-.sideButtons {
-  background-color:rgb(35, 35, 35);
-  color: white;
-  border: none;
-  padding: 15px 32px;
-  text-align: center;
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 16px;
-  width: 35vh;
-  cursor: pointer;
-  transform: translate(0px, 15px);
+  font-size: 25px;
+  color: #818181;
   display: block;
+  transition: 0.3s;
 }
 
-.showButton {
-  position: fixed;
-  margin-top: -100px;
-  margin-left: 70vh;
-  padding: 8px 7.5px;
-  border: none;
-  background-color:rgb(35, 35, 35);
-  color: white;
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  background-color: #111;
+  color: #818181;
   border-radius: 5px;
+  position: fixed;
+  top: 20px;
+  padding: 0px 5px;
+  transition: 0.3s;
 }
 
-.btn-group, .button:hover {
-  background-color: rgb(65, 65, 65);
+.openbtn span:hover {
+  color: white;
 }
-  
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
 
 
 

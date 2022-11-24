@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <title>All about Cats</title>
-        <link rel = "stylesheet" href = "style.css"></link>
-        <script src="https://kit.fontawesome.com/5a9482cb39.js" crossorigin="anonymous"></script>
-        <script href = "script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <header>
-            <h1> Cats <i class="fa-solid fa-cat"></i></h1>
-            <p style = "transform: translate(0px, -20px);"> Source: Wikipedia (Citation: Cat. (2022, November 21). In Wikipedia. https://en.wikipedia.org/wiki/Cat) </p>
-        </header>
-        <aside>
-            <button class="showButton"><i class="fa-solid fa-location-arrow" style = "transform: rotate(45deg);"></i></button>
-            <div class = "chapters">
-                <h1 style = "transform: translate(55px, 25px);">Chapters</h1>
-                <button class="sideButtons">What are Cats?</button>
-                <button class="sideButtons">Button</button>
-                <button class="sideButtons">Button</button>
-                <button class="sideButtons">Button</button>
-            </div>
-        </aside>
-        <main>
-            <p>The cat (Felis catus) is the only domestic species of the Felidae family. Cats are a species small carnivorous mammal. It's mostly called a domestic cat or a house cat</p>
-        </main>
+
+        <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+        </div>
+
+        <h2>Animated Sidenav Example</h2>
+        <p>Click on the element below to open the side navigation menu.</p>
+        <span style="font-size:30px;cursor:pointer" class = "openbtn" onclick="openNav()">&#9776;</span>
+
+        <script>
+        function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+   
     </body>
-</html>  
+</html> 
